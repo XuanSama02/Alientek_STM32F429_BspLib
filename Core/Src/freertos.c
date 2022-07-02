@@ -157,10 +157,16 @@ void StartDefaultTask(void const * argument)
 void Start_Blink(void const * argument)
 {
   /* USER CODE BEGIN Start_Blink */
+  F429_LED(LED_COLOR_RED, LED_ON);
+  osDelay(1000);
+  F429_LED(LED_COLOR_RED, LED_OFF);
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    F429_LED_Toggle(LED_COLOR_GREEN);
+    osDelay(150);
+    F429_LED_Toggle(LED_COLOR_GREEN);
+    osDelay(850);
   }
   /* USER CODE END Start_Blink */
 }
@@ -175,6 +181,7 @@ void Start_Blink(void const * argument)
 void Start_COM(void const * argument)
 {
   /* USER CODE BEGIN Start_COM */
+  osDelay(1000);
   /* Infinite loop */
   for(;;)
   {
@@ -193,10 +200,17 @@ void Start_COM(void const * argument)
 void Start_Debug(void const * argument)
 {
   /* USER CODE BEGIN Start_Debug */
+  osDelay(1000);
+  bool AT24C02_OK = false;
+  AT24C02_OK = AT24CXX_Check();
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    if(AT24C02_OK == true)
+      printf("AT24C02 Success!\r\n");
+    else
+      printf("AT24C02 Failed!\r\n");
+    osDelay(1000);
   }
   /* USER CODE END Start_Debug */
 }

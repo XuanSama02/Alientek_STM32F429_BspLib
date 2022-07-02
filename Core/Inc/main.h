@@ -31,7 +31,11 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
+#include "bsp_f429_led.h"
+#include "bsp_f429_pcf8574.h"
+#include "bsp_usart.h"
+#include "bsp_at24cxx.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,10 +61,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED_RED_Pin GPIO_PIN_0
-#define LED_RED_GPIO_Port GPIOB
-#define LED_GREEN_Pin GPIO_PIN_1
+#define LED_GREEN_Pin GPIO_PIN_0
 #define LED_GREEN_GPIO_Port GPIOB
+#define LED_RED_Pin GPIO_PIN_1
+#define LED_RED_GPIO_Port GPIOB
+#define PCF8574_INT_Pin GPIO_PIN_12
+#define PCF8574_INT_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

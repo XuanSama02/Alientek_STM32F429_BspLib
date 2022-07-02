@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "bsp_at24cxx.h": "c",
+        "stdbool.h": "c",
+        "main.h": "c",
+        "bsp_f429_led.h": "c",
+        "bsp_f429_io.h": "c",
+        "bsp_f429_pcf8574.h": "c"
+    }
+}

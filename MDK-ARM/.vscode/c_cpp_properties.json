@@ -3,16 +3,22 @@
         {
             "name": "STM32F429IGT6",
             "includePath": [
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Core\\Inc",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Drivers\\CMSIS\\Include",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Core\\Inc",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Drivers\\STM32F4xx_HAL_Driver\\Inc",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Drivers\\CMSIS\\Include",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Bsp",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Middlewares\\Third_Party\\FreeRTOS\\Source\\include",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Middlewares\\Third_Party\\FreeRTOS\\Source\\CMSIS_RTOS",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\RVDS\\ARM_CM4F",
                 "C:\\Keil\\ARM\\ARMCC\\include",
                 "C:\\Keil\\ARM\\ARMCC\\include\\rw",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\MDK-ARM",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Core\\Src",
-                "d:\\000000000000\\0Code-MengXuan\\MDK-ARM\\STM32F429IGT6\\Drivers\\STM32F4xx_HAL_Driver\\Src"
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\MDK-ARM",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Core\\Src",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Drivers\\STM32F4xx_HAL_Driver\\Src",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Middlewares\\Third_Party\\FreeRTOS\\Source",
+                "d:\\000000000000\\0Code-MengXuan\\00000000GitHub\\Alientek_STM32F429_BspLib\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
