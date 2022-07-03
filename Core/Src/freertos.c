@@ -139,6 +139,7 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
+  PCF8574_Init();
   /* Infinite loop */
   for(;;)
   {
@@ -158,7 +159,10 @@ void Start_Blink(void const * argument)
 {
   /* USER CODE BEGIN Start_Blink */
   F429_LED(LED_COLOR_RED, LED_ON);
-  osDelay(1000);
+  PCF8574_WriteBit(IO_BEEP, IO_ENABLE);
+  osDelay(200);
+  PCF8574_WriteBit(IO_BEEP, IO_DISABLE);
+  osDelay(800);
   F429_LED(LED_COLOR_RED, LED_OFF);
   /* Infinite loop */
   for(;;)
@@ -201,15 +205,9 @@ void Start_Debug(void const * argument)
 {
   /* USER CODE BEGIN Start_Debug */
   osDelay(1000);
-  bool AT24C02_OK = false;
-  AT24C02_OK = AT24CXX_Check();
   /* Infinite loop */
   for(;;)
   {
-    if(AT24C02_OK == true)
-      printf("AT24C02 Success!\r\n");
-    else
-      printf("AT24C02 Failed!\r\n");
     osDelay(1000);
   }
   /* USER CODE END Start_Debug */
