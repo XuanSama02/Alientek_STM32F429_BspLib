@@ -205,10 +205,11 @@ void Start_Debug(void const * argument)
 {
   /* USER CODE BEGIN Start_Debug */
   osDelay(1000);
+  F429_Test();
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1000);
+    osDelay(1);
   }
   /* USER CODE END Start_Debug */
 }

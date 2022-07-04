@@ -5,6 +5,10 @@
         "main.h": "c",
         "bsp_f429_led.h": "c",
         "bsp_f429_io.h": "c",
-        "bsp_f429_pcf8574.h": "c"
+        "bsp_f429_pcf8574.h": "c",
+        "bsp_w25qxx.h": "c",
+        "bsp_f429.h": "c",
+        "bsp_malloc.h": "c",
+        "bsp_sdram.h": "c"
     }
 }

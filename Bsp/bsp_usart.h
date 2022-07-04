@@ -5,7 +5,7 @@
 #include "stdio.h"
 
 /*
-STM32_HAL USART XuanLib V1.1
+STM32_HAL USART XuanLib
 2022/05/31
 changelog：重定义printf函数实现对UART1串口的输出
 1.需要在MDK中勾选：Use MicroLib

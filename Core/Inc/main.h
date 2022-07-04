@@ -32,10 +32,13 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
+#include "bsp_f429.h"
 #include "bsp_f429_led.h"
 #include "bsp_f429_pcf8574.h"
+#include "bsp_delay_tim.h"
 #include "bsp_usart.h"
 #include "bsp_at24cxx.h"
+#include "bsp_w25qxx.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -61,6 +64,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SPI5_CS_Pin GPIO_PIN_6
+#define SPI5_CS_GPIO_Port GPIOF
 #define LED_GREEN_Pin GPIO_PIN_0
 #define LED_GREEN_GPIO_Port GPIOB
 #define LED_RED_Pin GPIO_PIN_1
