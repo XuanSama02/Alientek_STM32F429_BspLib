@@ -140,6 +140,7 @@ void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   PCF8574_Init();
+  SDRAM_Init();
   /* Infinite loop */
   for(;;)
   {

@@ -8,6 +8,8 @@
 
 #include "bsp_at24cxx.h"
 #include "bsp_w25qxx.h"
+#include "bsp_sdram.h"
+#include "bsp_malloc.h"
 
 /*
 STM32_HAL F411 XuanLib
@@ -21,5 +23,6 @@ changelog：
 void F429_Test(void);
 void F429_Test_AT24C02(void);
 void F429_Test_W25Q256(void);
+void F429_Test_SDRAM(void);
 
 #endif

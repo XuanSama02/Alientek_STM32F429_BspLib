@@ -24,6 +24,7 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
+#include "fmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -94,6 +95,7 @@ int main(void)
   MX_I2C2_Init();
   MX_SPI5_Init();
   MX_TIM10_Init();
+  MX_FMC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
